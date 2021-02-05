@@ -1,0 +1,96 @@
+<html>
+<head>
+    <title>Pizzeria</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+<script src="main.js"></script>
+</head>
+
+<body>
+    
+    <div class="topnav">
+
+        <div class="topnav-right">
+         <a href="#viewblock">View Menu</a>
+         <a href="#addTopings">Add Menu</a>
+         <a href="#contact_us">Contact Us</a>
+        </div>
+    </div>
+    <marquee direction="down" behavior="alternate" height="150">
+
+        <marquee behavior="alternate"><font size="7">www.Pizza.Pizzeria.com</font></marquee>
+        <marquee bgcolor="#FF0000"></marquee>
+        
+        </marquee>
+    <div class="row" id="viewblock">
+        <div  class="img_div"> 
+            <img class="img-responsive"  src="pizza.png">
+        </div>
+      <div class="menu_div">
+          <button id="menu_list" onclick="getmenu()">Show Menu</button>
+          <br>
+          <br>
+          <div id="display_menu"></div>
+      </div>
+    </div>
+    
+    <div class="newRow" id="addTopings">
+        <h2 id="h16">Add Menu?</h2>
+        <div class="block1">
+            <input id="add_item" placeholder="Type here to add new food item?"/></br>
+            <br>
+            <br>
+            <button id="add_toppings" onclick="add_item()">Recommend Us a new Pizza?</button>
+        </div>
+        
+    </div>
+    <div class="block2">
+    <div id="display_addedmenu"></div>
+</div>
+    <div>
+        <img class="img-responsive"  src="topping.png">
+    </div>
+    <center><div class="container">
+        <div class="page-header col-lg-12 col-md-12 col-sm-12 col-xs-12" id="contact_us">
+            <h2 id="h14" class="text-capitalize">contact us</h2>
+        </div>
+        <h2 id="h15">Store's Location</h2>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d3597.645656308428!2d85.05697906481582!3d25.616688333702797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m5!1s0x39ed57cb8be62493%3A0xef4cb6c8621203a5!2sShila%20Residency%2C%20Street%20Number%2011%2C%20Ramjaipal%20Nagar%2C%20Danapur%20Nizamat%2C%20Patna%2C%20Bihar!3m2!1d25.6164566!2d85.0589482!4m3!3m2!1d25.6173812!2d85.0592908!5e0!3m2!1sen!2sin!4v1612535049146!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+    
+        <div id="details">
+            <h1 id="h12">Store Name:Pizzeria</h1>
+            <img src="pizzaImg.png" class="img-responsive img-circle col-lg-3 col-md-3 col-sm-3 col-xs-4">
+        </div>
+        <div class="contact_2 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <form>
+                <span id="sp1">Your Name: </span>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" name="Name" required>
+                <br>
+                <br>
+                <span id="sp2">How Was The Taste Of Pizza ?: </span>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" name="Feedback" required>
+                <br>
+                <br>
+                <input type="submit" value="submit" class="btn btn-success">
+            </form>
+
+        </div>
+    </div></center>
+    <center><h1 id="h0">Hope You Liked This Pizzeria Website!</h1></center>
+    <center><h1 id="h0">Thank You So Much!</h1></center>
+    
+   <div id="footer"></div>
+
+
+</body>
+</html>
